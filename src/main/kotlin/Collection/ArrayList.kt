@@ -1,0 +1,48 @@
+package Collection
+
+import Student
+
+fun main() {
+
+    var list = ArrayList<Student>(25) // все студенты
+    list.add(Student("Jon","Lachetti",2))
+    list.add(Student("Tom","Skoletta",2))
+    list.add(Student("Katy","Lermantova",3))
+    list.add(Student("Anna","Stivina",3))
+    list.add(Student("Halk","Grandsinov",1))
+    list.add(Student("MisterX","Jesikson",1))
+
+
+    var list2 = ArrayList<Student>(25) //студенты сдавшие зачет
+    list2.add(Student("Tom","Skoletta",2))
+    list2.add(Student("Anna","Stivina",3))
+    list2.add(Student("MisterX","Jesikson",1))
+
+    var listPassedTheExam = ArrayList<Student>()
+        listPassedTheExam.addAll(list) // копирование листа
+
+    //удалить лист из листа
+    list.removeAll(list2) // список на отчисление
+    list.forEach( { println("$it  - отчисление")})
+
+    println()
+
+    // список студентов на след курс
+    listPassedTheExam.retainAll(list)
+    list2.forEach({ println("$it  - переход на след курс")})
+
+
+    //поиск поступивших студентов
+    //добавление объекта
+    var studentTomas = Student("Tomas","Vesikson",1)
+    listPassedTheExam.add(studentTomas)
+
+    //поиск объекта по ссылке
+   var search  = listPassedTheExam.contains(studentTomas)
+    println(search)
+
+
+
+
+}
+
