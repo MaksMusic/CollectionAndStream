@@ -6,5 +6,7 @@ fun main() {
         infoStudent = " ${name.uppercase()} surname $surname"
     }
 
+
+
     println(infoStudent)
 }
