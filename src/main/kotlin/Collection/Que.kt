@@ -16,4 +16,17 @@ fun main() {
     println(que)
     println(que.remove())
     println(que)
+
+
+var n = System.currentTimeMillis()
+
+    for (i in 1..10001110){
+        que.offer(i)
+    }
+
+    println((System.currentTimeMillis() - n).toFloat() / 1000.0)
+
+
+
+
 }
