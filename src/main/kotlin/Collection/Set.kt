@@ -7,6 +7,5 @@ fun main() {
     setList.add("Joni")
     setList.add("Joni")
     setList.add("Joni")
-    setList.add("Joni")
     println(setList)
 }
