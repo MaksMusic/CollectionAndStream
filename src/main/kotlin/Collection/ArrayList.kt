@@ -12,6 +12,12 @@ fun main() {
     list.add(Student("Halk", "Grandsinov", 1))
     list.add(Student("MisterX", "Jesikson", 1))
 
+    var  listArray  = arrayListOf<String>("1","2","1")
+    listArray.add("1")
+    println(listArray)
+
+
+
 
     var list2 = ArrayList<Student>(25) //студенты сдавшие зачет
     list2.add(Student("Tom", "Skoletta", 2))
@@ -42,7 +48,7 @@ fun main() {
     println(search)
 
 
-//  не изменяемые коллекции
+//  Не изменяемые коллекции
     var listTwo = listOf<Student>(
         Student("Tomas", "Janro", 1),
         Student("Tomas", "Janro", 1),
@@ -53,6 +59,11 @@ fun main() {
     println(listTwo.lastIndex)
     println(listTwo.size)
     println(listTwo.get(2).name)
+
+    // если вызвать функцию у изменияемой коллекции то вернет изменяемую коллекцию
+    // если вызвать функцию у не изменияемой коллекции то вернет не изменяемую коллекцию
+    var sub = listTwo.subList(1,5)
+    println(sub)
 
 }
 

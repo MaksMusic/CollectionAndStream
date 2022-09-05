@@ -3,6 +3,7 @@ package Collection
 import java.util.*
 
 fun main() {
+    // Изменяемые коллекции MutableIterable
     var list = LinkedList<String>()
     list.add("Tima")
     list.add("Jima")
