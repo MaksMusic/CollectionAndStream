@@ -4,7 +4,7 @@ fun main() {
     var list = sequenceOf<String>("Tom","Jimm","Kia","Senneor"  )
 
    list.asSequence().run {
-       println(this.toString())
+     this.forEach { println(it) }
    }
 
     list.run {
