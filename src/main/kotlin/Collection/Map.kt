@@ -4,7 +4,10 @@ fun main() {
     // изменяемая коллекция
     var n1 = mutableMapOf<String,String>("S1" to "123","S2" to "456" , "S3" to "7891011" )
     var n11 = LinkedHashMap<String,String>()
+    var e11 = linkedMapOf<String,String>()
     var n2 = HashMap<String,String>()
+
+
 
     n11.putAll(n1)
     println(n11)
@@ -33,6 +36,7 @@ fun main() {
     println(acc)
 
     // неизменяемая коллекция
+
     var map = mapOf<String,String>("log1" to "pass1","log2" to "pass2")
     var t = map.entries
     println(t)
