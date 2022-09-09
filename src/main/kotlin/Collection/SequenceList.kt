@@ -23,4 +23,26 @@ fun main() {
     println(numbers3.joinToString())
 
 
+    var sq = sequence {
+        yield("s1")
+        yield("s2")
+        yield("s3")
+    }
+
+    println(sq.joinToString())
+
+    var sqInt = sequence {
+        yield(1)
+        yield(2)
+        yield(3)
+        yield(3)
+        yield(3)
+    }
+
+
+    println(sqInt.average()) // среднее число
+
+    var sqInt2 = sqInt.distinct() // уникальные элементы
+    println(sqInt2.joinToString())
+
 }
