@@ -8,7 +8,6 @@ fun main() {
     var n2 = HashMap<String,String>()
 
 
-
     n11.putAll(n1)
     println(n11)
 
@@ -40,5 +39,16 @@ fun main() {
     var map = mapOf<String,String>("log1" to "pass1","log2" to "pass2")
     var t = map.entries
     println(t)
+
+    var map2 = mapOf<String,String>(
+        "log1" to "pass1","log2" to "pass2",
+        "log3" to "pass3","log4" to "pass4",
+        "log5" to "pass5","log6" to "pass6",)
+
+    for (entry in map2) {
+        println(entry.value  + " - value " + entry.key+ " - key")
+    }
+
+
 
 }
