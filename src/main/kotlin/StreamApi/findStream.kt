@@ -1,6 +1,7 @@
 package StreamApi
 
 fun main() {
+    // удаляет элемент если он найден только 1 элемент первый  который найдет
     val list = mutableListOf<String>()
     list.add("element1")
     list.add("element2")
